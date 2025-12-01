@@ -1,3 +1,4 @@
+import SmoothScroll from "@/components/smoothscroll";
 import type { Metadata } from "next";
 import { Darker_Grotesque, Poppins, Space_Mono } from "next/font/google";
 import "./globals.css";
@@ -35,6 +36,7 @@ export default function RootLayout({
             <body
                 className={`${darkerGrotesque.variable} ${poppins.variable} ${spaceMono.variable} antialiased`}
             >
+                <SmoothScroll />
                 {children}
             </body>
         </html>

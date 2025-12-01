@@ -8,6 +8,9 @@ interface NavProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const NavList: React.FC<NavProps> = ({ href, text, active = false }) => {
     const content = text || "NavList";
+    // Pisahkan 3 karakter pertama dan sisanya
+    const firstThree = content.slice(0, 3);
+    const rest = content.slice(3);
     const hrefLink = "#" + href || "#";
 
     return (
@@ -27,7 +30,8 @@ const NavList: React.FC<NavProps> = ({ href, text, active = false }) => {
                             : "text-slate-500 group-hover:text-slate-200"
                     }`}
                 >
-                    {content}
+                    <span className="text-(--green)">{firstThree}</span>
+                    {rest}
                 </span>
             </a>
         </li>

@@ -4,6 +4,7 @@ import NavList from "@/components/ui/navlist";
 import Social from "@/components/ui/social";
 import { useEffect, useRef, useState } from "react";
 import AboutSection from "./section/about";
+import ExperienceSection from "./section/experience";
 
 export default function Home() {
     const spotlightRef = useRef<HTMLDivElement>(null);
@@ -54,28 +55,19 @@ export default function Home() {
                 <div className="lg:flex lg:justify-between lg:gap-4">
                     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[55%] lg:flex-col lg:justify-between lg:py-10 xl:py-20">
                         <div>
-                            <p className="font-secondary text-highlight">
+                            <text className="font-secondary text-highlight">
                                 Halo, nama saya
-                            </p>
-                            <h1 className="mt-2 font-title text-3xl font-bold leading-tight text-white sm:text-5xl">
+                            </text>
+                            <h1 className="font-title text-3xl font-bold leading-tight text-white sm:text-5xl">
                                 Akmal Zaidan Hibatullah.
                             </h1>
-                            <p className="mt-4 max-w-prose text-sm">
-                                Saya seorang mahasiswa{" "}
+                            <p className="mt-4 max-w-sm text-sm">
                                 <span className="text-highlight">
-                                    Teknik Informatika
-                                </span>
-                                , memiliki pengalaman dalam membangun dan
-                                mengembangkan{" "}
-                                <span className="text-highlight">
-                                    Aplikasi Mobile
+                                    Mahasiswa IT — Software & Web Developer
                                 </span>{" "}
-                                dan{" "}
-                                <span className="text-highlight">Website</span>.
-                                Sangat antusias terhadap teknologi dan selalu
-                                ingin belajar hal baru, saat ini saya fokus
-                                mencari pengalaman profesional di dunia kerja
-                                nyata.
+                                <br />
+                                Belajar, membangun, dan terus berkembang sebagai
+                                developer setiap hari.
                             </p>
                             <div className="flex-row gap-10 mt-6 flex items-center">
                                 <Button
@@ -90,6 +82,10 @@ export default function Home() {
                                     <Social
                                         link="https://instagram.com/m4mayz"
                                         icon="/instagram.svg"
+                                    />
+                                    <Social
+                                        link="https://linkedin.com/in/m4mayz"
+                                        icon="/linkedin.svg"
                                     />
                                 </div>
                             </div>
@@ -123,8 +119,9 @@ export default function Home() {
                             </nav>
                         </div>
                     </header>
-                    <main className="pt-24 lg:w-[52%] lg:py-24">
+                    <main className="pt-24 lg:w-[60%] lg:py-24">
                         <AboutSection />
+                        <ExperienceSection />
                     </main>
                 </div>
             </div>
