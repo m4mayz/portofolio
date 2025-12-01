@@ -1,12 +1,12 @@
 import SmoothScroll from "@/components/smoothscroll";
 import type { Metadata } from "next";
-import { Darker_Grotesque, Poppins, Space_Mono } from "next/font/google";
+import { Gabarito, Poppins, Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const darkerGrotesque = Darker_Grotesque({
+const gabarito = Gabarito({
     subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700"],
-    variable: "--font-darker-grotesque",
+    weight: ["400", "500", "600", "700", "800", "900"],
+    variable: "--font-gabarito",
 });
 
 const poppins = Poppins({
@@ -34,7 +34,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${darkerGrotesque.variable} ${poppins.variable} ${spaceMono.variable} antialiased`}
+                className={`${gabarito.variable} ${poppins.variable} ${spaceMono.variable} antialiased`}
             >
                 <SmoothScroll />
                 {children}

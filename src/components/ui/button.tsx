@@ -8,8 +8,17 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 const Button: React.FC<ButtonProps> = ({ text, link, ...props }) => {
     const content = text || "Button";
     const className =
-        "cursor-pointer px-8 py-3 outline-(--green) text-xs lg:text-base font-secondary whitespace-nowrap hover:font-semibold text-(--green) hover:text-background bg-transparent hover:bg-(--green) outline rounded transition-all motion-reduce:transition-none antialiased" +
+        "group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-(--green) border-2 border-(--green) rounded-lg hover:text-(--background) transition-colors duration-300 ease-out" +
         (props.className ? ` ${props.className}` : "");
+
+    const buttonContent = (
+        <>
+            <span className="absolute inset-0 w-full h-full bg-(--green) transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out"></span>
+            <span className="relative z-10 font-mono font-semibold tracking-wide">
+                {content}
+            </span>
+        </>
+    );
 
     if (link) {
         return (
@@ -21,13 +30,13 @@ const Button: React.FC<ButtonProps> = ({ text, link, ...props }) => {
                 role="button"
                 tabIndex={0}
             >
-                {content}
+                {buttonContent}
             </a>
         );
     }
     return (
         <button className={className} {...props}>
-            {content}
+            {buttonContent}
         </button>
     );
 };

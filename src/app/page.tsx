@@ -25,17 +25,21 @@ export default function Home() {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setActiveSection(entry.target.id);
+                        window.history.replaceState(
+                            null,
+                            "",
+                            `#${entry.target.id}`
+                        );
                     }
                 });
             },
             {
                 root: null,
-                rootMargin: "-20% 0px -35% 0px", // Mengatur area deteksi agar lebih natural saat scroll
+                rootMargin: "-20% 0px -35% 0px",
                 threshold: 0.1,
             }
         );
 
-        // Daftarkan section ID yang ingin dipantau
         const sections = document.querySelectorAll("section[id]");
         sections.forEach((section) => observer.observe(section));
 
@@ -55,14 +59,14 @@ export default function Home() {
                 <div className="lg:flex lg:justify-between lg:gap-4">
                     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[55%] lg:flex-col lg:justify-between lg:py-10 xl:py-20">
                         <div>
-                            <text className="font-secondary text-highlight">
+                            <text className="font-mono text-green">
                                 Halo, nama saya
                             </text>
-                            <h1 className="font-title text-3xl font-bold leading-tight text-white sm:text-5xl">
+                            <h1 className="font-title text-3xl font-bold leading-tight text-white sm:text-4xl mt-4">
                                 Akmal Zaidan Hibatullah.
                             </h1>
-                            <p className="mt-4 max-w-sm text-sm">
-                                <span className="text-highlight">
+                            <p className="mt-4 max-w-sm text-[15px] mb-6">
+                                <span className="text-white font-semibold">
                                     Mahasiswa IT — Software & Web Developer
                                 </span>{" "}
                                 <br />
@@ -91,10 +95,10 @@ export default function Home() {
                             </div>
 
                             <nav
-                                className="nav hidden lg:block"
+                                className="hidden lg:block"
                                 aria-label="In-page jump links"
                             >
-                                <ul className="mt-10 w-max">
+                                <ul className="mt-15 w-max">
                                     <NavList
                                         href="about"
                                         text="01. Tentang Saya"
