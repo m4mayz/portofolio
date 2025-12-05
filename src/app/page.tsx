@@ -5,6 +5,7 @@ import Social from "@/components/ui/social";
 import { useEffect, useRef, useState } from "react";
 import AboutSection from "./section/about";
 import ExperienceSection from "./section/experience";
+import ProjectsSection from "./section/project";
 
 export default function Home() {
     const spotlightRef = useRef<HTMLDivElement>(null);
@@ -14,7 +15,7 @@ export default function Home() {
         // Spotlight logic
         const handleMouseMove = (e: MouseEvent) => {
             if (spotlightRef.current) {
-                spotlightRef.current.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(117, 221, 221, 0.15), transparent 80%)`;
+                spotlightRef.current.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, var(--spotlight), transparent 80%)`;
             }
         };
         window.addEventListener("mousemove", handleMouseMove);
@@ -67,7 +68,7 @@ export default function Home() {
                             </h1>
                             <p className="mt-4 max-w-sm text-[15px] mb-6">
                                 <span className="text-white font-semibold">
-                                    Mahasiswa IT — Software & Web Developer
+                                    Mahasiswa IT — Mobile & Web Developer
                                 </span>{" "}
                                 <br />
                                 Belajar, membangun, dan terus berkembang sebagai
@@ -82,14 +83,17 @@ export default function Home() {
                                     <Social
                                         link="https://github.com/m4mayz"
                                         icon="/github.svg"
+                                        tooltip="GitHub"
                                     />
                                     <Social
                                         link="https://instagram.com/m4mayz"
                                         icon="/instagram.svg"
+                                        tooltip="Instagram"
                                     />
                                     <Social
                                         link="https://linkedin.com/in/m4mayz"
                                         icon="/linkedin.svg"
+                                        tooltip="LinkedIn"
                                     />
                                 </div>
                             </div>
@@ -126,6 +130,7 @@ export default function Home() {
                     <main className="pt-24 lg:w-[60%] lg:py-24">
                         <AboutSection />
                         <ExperienceSection />
+                        <ProjectsSection />
                     </main>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import SmoothScroll from "@/components/smoothscroll";
 import type { Metadata } from "next";
-import { Gabarito, Poppins, Space_Mono } from "next/font/google";
+import { Gabarito, Plus_Jakarta_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
 
 const gabarito = Gabarito({
@@ -9,10 +9,10 @@ const gabarito = Gabarito({
     variable: "--font-gabarito",
 });
 
-const poppins = Poppins({
+const plusJakartaSans = Plus_Jakarta_Sans({
     subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    variable: "--font-poppins",
+    weight: ["200", "300", "400", "500", "600", "700", "800"],
+    variable: "--font-plus-jakarta-sans",
 });
 
 const spaceMono = Space_Mono({
@@ -34,7 +34,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${gabarito.variable} ${poppins.variable} ${spaceMono.variable} antialiased`}
+                className={`${gabarito.variable} ${plusJakartaSans.variable} ${spaceMono.variable} antialiased`}
             >
                 <SmoothScroll />
                 {children}

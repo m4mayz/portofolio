@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 :root {
-    --background: #172a3a;
+    --background: #0b132b;
     --foreground: rgba(226, 232, 240, 0.7);
-    --green: #0beaab;
+    --green: #6fffe9;
+    --spotlight: rgb(from var(--green) r g b / 0.1);
+    --selected: rgb(from var(--green) r g b / 0.7);
 }
 
 @theme inline {
@@ -12,9 +14,9 @@
     --color-green: var(--green);
 
     --font-family-title: var(--font-gabarito), sans-serif;
-    --font-family-body: var(--font-poppins), sans-serif;
+    --font-family-body: var(--font-plus-jakarta-sans), sans-serif;
     --font-family-mono: var(--font-space-mono), monospace;
-    --font-family-sans: var(--font-poppins), sans-serif;
+    --font-family-sans: var(--font-plus-jakarta-sans), sans-serif;
 }
 
 @layer utilities {
@@ -29,10 +31,8 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: var(--foreground); /* Atau hex color */
-        border-radius: 20px;
-        border: 3px solid transparent;
-        background-clip: content-box;
+        background-color: var(--foreground);
+        border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -42,13 +42,28 @@
     /* Firefox */
     * {
         scrollbar-width: thin;
+        scrollbar-color: var(--foreground) transparent;
+    }
+
+    *:hover {
         scrollbar-color: var(--green) transparent;
     }
 }
 @layer base {
     body {
         @apply bg-background text-foreground leading-[2em];
-        font-family: var(--font-poppins), sans-serif;
+        font-family: var(--font-plus-jakarta-sans), sans-serif;
+    }
+
+    /* Custom text selection colors */
+    ::selection {
+        background-color: var(--selected);
+        color: var(--background);
+    }
+
+    ::-moz-selection {
+        background-color: var(--selected);
+        color: var(--background);
     }
 
     h1,
@@ -58,7 +73,7 @@
     h5,
     h6 {
         @apply tracking-wide;
-        font-family: var(--font-space-mono), monospace;
+        font-family: var(--font-gabarito), sans-serif;
     }
 
     p {
@@ -72,7 +87,7 @@
     }
 
     .font-body {
-        font-family: var(--font-poppins), sans-serif;
+        font-family: var(--font-plus-jakarta-sans), sans-serif;
     }
 
     .font-mono {

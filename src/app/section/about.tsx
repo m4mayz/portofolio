@@ -19,21 +19,21 @@ const AboutSection: React.FC = () => {
             <p className="mt-2 text-[15px] mb-6">
                 Halo! Nama saya Akmal, tapi kebanyakan teman memanggil saya
                 Amayy. Saya suka membuat hal-hal yang “hidup” di perangkat
-                mobile dan web. Ketertarikan saya terhadap dunia Software
-                Development mulai jauh sebelum saya masuk kampus—lebih tepatnya
-                saat SMP, ketika saya iseng mengunduh source code aplikasi
-                Visual Basic 6 dari internet, memodifikasinya, lalu merasakan
-                kepuasan yang nggak ada obatnya ketika kode itu akhirnya jalan
-                sesuai keinginan. Dari situ, saya tahu: kayaknya dunia IT ini
-                tempat saya banget.
+                mobile dan web. Ketertarikan saya terhadap dunia IT Development
+                mulai jauh sebelum saya masuk kampus—lebih tepatnya saat SMP,
+                ketika saya iseng mengunduh source code aplikasi Visual Basic 6
+                dari internet, memodifikasinya, lalu merasakan kepuasan yang
+                nggak ada obatnya ketika kode itu akhirnya jalan sesuai
+                keinginan. Dari situ, saya tahu: kayaknya dunia IT ini tempat
+                saya banget.
             </p>
             <p className="mt-2 text-[15px] mb-6">
                 Saat ini, saya sedang menempuh studi S1 Teknik Informatika dan
                 aktif membangun berbagai project, dari Website sampai Fullstack
-                Mobile App. Sejauh ini saya pernah mengerjakan beberapa aplikasi
-                untuk organisasi kampus, project personal, hingga eksperimen
-                kecil-kecilan yang bantu saya paham lebih jauh tentang software,
-                cloud, and hal-hal yang berbau SaaS.
+                Mobile App. Sejauh ini saya pernah mengerjakan beberapa website
+                dan aplikasi untuk organisasi kampus, project personal, hingga
+                eksperimen kecil-kecilan yang bantu saya paham lebih jauh
+                tentang software, cloud, dan hal-hal yang berbau SaaS.
             </p>
             <p className="mt-2 text-[15px]">
                 Berikut beberapa teknologi yang belakangan ini sering saya

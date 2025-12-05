@@ -1,15 +1,18 @@
 import React from "react";
+import Tooltip from "./tooltip";
 
 interface SocialProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     icon: string;
     link: string;
+    tooltip?: string;
 }
 
-const Social: React.FC<SocialProps> = ({ icon, link, ...props }) => {
+const Social: React.FC<SocialProps> = ({ icon, link, tooltip, ...props }) => {
     const className =
-        "cursor-pointer text-(--green) hover:text-(--green-hover) transition-all motion-reduce:transition-none antialiased" +
+        "cursor-pointer text-green hover:text-(--green-hover) transition-all motion-reduce:transition-none antialiased" +
         (props.className ? ` ${props.className}` : "");
-    return (
+
+    const socialLink = (
         <a
             href={link}
             target="_blank"
@@ -32,5 +35,15 @@ const Social: React.FC<SocialProps> = ({ icon, link, ...props }) => {
             />
         </a>
     );
+
+    if (tooltip) {
+        return (
+            <Tooltip content={tooltip} position="top">
+                {socialLink}
+            </Tooltip>
+        );
+    }
+
+    return socialLink;
 };
 export default Social;
