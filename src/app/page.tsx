@@ -82,17 +82,17 @@ export default function Home() {
                                 <div className="flex-row gap-5 flex">
                                     <Social
                                         link="https://github.com/m4mayz"
-                                        icon="/github.svg"
+                                        icon="mdi:github"
                                         tooltip="GitHub"
                                     />
                                     <Social
                                         link="https://instagram.com/m4mayz"
-                                        icon="/instagram.svg"
+                                        icon="mdi:instagram"
                                         tooltip="Instagram"
                                     />
                                     <Social
                                         link="https://linkedin.com/in/m4mayz"
-                                        icon="/linkedin.svg"
+                                        icon="lineicons:linkedin"
                                         tooltip="LinkedIn"
                                     />
                                 </div>

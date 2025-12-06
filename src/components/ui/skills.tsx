@@ -1,12 +1,12 @@
-import Image from "next/image";
+import { Icon } from "@iconify/react";
 import React from "react";
 
 interface SkillProps extends React.HTMLAttributes<HTMLDivElement> {
-    svg: string;
+    icon: string;
     name: string;
 }
 
-const Skill: React.FC<SkillProps> = ({ svg, name, className, ...props }) => {
+const Skill: React.FC<SkillProps> = ({ icon, name, className, ...props }) => {
     return (
         <div
             className={`
@@ -18,13 +18,7 @@ const Skill: React.FC<SkillProps> = ({ svg, name, className, ...props }) => {
             `}
             {...props}
         >
-            <Image
-                src={svg}
-                alt={name}
-                width={16}
-                height={16}
-                className="w-4 h-4"
-            />
+            <Icon icon={icon} className="w-4 h-4" />
             <span className="font-mono text-xs font-medium text-green">
                 {name}
             </span>

@@ -42,7 +42,7 @@ const ExperienceCard: React.FC<ExperienceProps> = ({
                 {description.map((item, index) => (
                     <li
                         key={index}
-                        className="flex gap-2 text-sm text-foreground/70 leading-relaxed"
+                        className="flex gap-2 text-sm leading-relaxed"
                     >
                         <span className="text-green shrink-0 antialiased">
                             ▹

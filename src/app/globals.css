@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 :root {
-    --background: #0b132b;
+    --background: #191825;
     --foreground: rgba(226, 232, 240, 0.7);
-    --green: #6fffe9;
+    --green: #e384ff;
     --spotlight: rgb(from var(--green) r g b / 0.1);
     --selected: rgb(from var(--green) r g b / 0.7);
+    --white: #eeeeee;
 }
 
 @theme inline {

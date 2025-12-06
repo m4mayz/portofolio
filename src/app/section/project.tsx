@@ -15,6 +15,7 @@ const ProjectSection: React.FC = () => {
                 <h2 className="font-mono text-sm font-bold text-slate-200 lg:sr-only">
                     <span className="text-green">03.</span> Proyek
                 </h2>
+                <span className="ml-4 h-[1.5px] w-25 bg-slate-200"></span>
             </div>
             <div className="flex flex-col gap-4">
                 {data.map((project) => (

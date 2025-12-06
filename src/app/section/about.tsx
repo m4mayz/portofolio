@@ -40,19 +40,22 @@ const AboutSection: React.FC = () => {
                 gunakan dan eksplor:
             </p>
             <div className="mt-4 flex flex-wrap gap-3 lg:gap-4">
-                <Skill svg="/skills/javascript.svg" name="JavaScript" />
-                <Skill svg="/skills/php.svg" name="PHP" />
-                <Skill svg="/skills/python.svg" name="Python" />
-                <Skill svg="/skills/typescript.svg" name="TypeScript" />
-                <Skill svg="/skills/react.svg" name="React" />
-                <Skill svg="/skills/react.svg" name="React Native" />
-                <Skill svg="/skills/next-js.svg" name="Next.js" />
-                <Skill svg="/skills/expo.svg" name="Expo" />
-                <Skill svg="/skills/wordpress.svg" name="WordPress" />
-                <Skill svg="/skills/tailwindcss.svg" name="Tailwindcss" />
-                <Skill svg="/skills/gemini.svg" name="Google Gemini" />
-                <Skill svg="/skills/openai.svg" name="ChatGPT" />
-                <Skill svg="/skills/githubcopilot.svg" name="GitHub Copilot" />
+                <Skill icon="devicon:javascript" name="JavaScript" />
+                <Skill icon="material-icon-theme:php" name="PHP" />
+                <Skill icon="devicon:python" name="Python" />
+                <Skill icon="devicon:typescript" name="TypeScript" />
+                <Skill icon="devicon:react" name="React" />
+                <Skill icon="devicon:react" name="React Native" />
+                <Skill icon="devicon:nextjs" name="Next.js" />
+                <Skill icon="devicon:expo" name="Expo" />
+                <Skill icon="skill-icons:wordpress" name="WordPress" />
+                <Skill icon="devicon:tailwindcss" name="Tailwindcss" />
+                <Skill
+                    icon="material-icon-theme:gemini-ai"
+                    name="Google Gemini"
+                />
+                <Skill icon="simple-icons:openai" name="ChatGPT" />
+                <Skill icon="devicon:githubcopilot" name="GitHub Copilot" />
             </div>
         </section>
     );
