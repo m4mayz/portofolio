@@ -1,4 +1,5 @@
 import SmoothScroll from "@/components/smoothscroll";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Gabarito, Plus_Jakarta_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
@@ -37,6 +38,7 @@ export default function RootLayout({
                 className={`${gabarito.variable} ${plusJakartaSans.variable} ${spaceMono.variable} antialiased`}
             >
                 <SmoothScroll />
+                <Analytics />
                 {children}
             </body>
         </html>
