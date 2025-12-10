@@ -40,8 +40,8 @@ const Tooltip: React.FC<TooltipProps> = ({
             {children}
             <div
                 className={`
-                    absolute z-50 px-3 py-2 text-xs font-medium text-(--background)
-                    bg-(--green) rounded-lg shadow-lg whitespace-nowrap
+                    absolute z-50 px-3 py-2 text-xs font-medium text-background
+                    bg-green rounded-lg shadow-lg whitespace-nowrap
                     transition-all duration-200 motion-reduce:transition-none
                     ${
                         isVisible
