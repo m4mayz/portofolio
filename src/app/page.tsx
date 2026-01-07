@@ -5,6 +5,7 @@ import AboutSection from "@/components/sections/about";
 import ContactSection from "@/components/sections/contact";
 import ExperienceSection from "@/components/sections/experience";
 import ProjectsSection from "@/components/sections/project";
+import BackToTop from "@/components/ui/back-to-top";
 import LanguageSwitcher from "@/components/ui/language-switcher";
 import NavList from "@/components/ui/navlist";
 import Social from "@/components/ui/social";
@@ -144,6 +145,7 @@ export default function Home() {
                     </main>
                 </div>
             </div>
+            <BackToTop />
         </>
     );
 }

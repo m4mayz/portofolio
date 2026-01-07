@@ -34,7 +34,7 @@
         "builtWith": "Built with"
     },
     "cv": {
-        "generating": "Generating...",
-        "downloadError": "Failed to download CV. Please try again."
-    }
+        "generating": "Generating..."
+    },
+    "backToTop": "Back to top"
 }

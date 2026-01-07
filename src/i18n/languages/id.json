@@ -36,5 +36,6 @@
     "cv": {
         "generating": "Generating...",
         "downloadError": "Gagal mengunduh CV. Silakan coba lagi."
-    }
+    },
+    "backToTop": "Kembali ke atas"
 }
