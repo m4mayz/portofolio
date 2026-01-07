@@ -2,14 +2,22 @@
 
 import ProjectCard from "@/components/cards/project-card";
 import data from "@/data/project.json";
+import useScrollAnimation from "@/lib/use-scroll-animation";
 import { Icon } from "@iconify/react";
 import React from "react";
 
 const ProjectSection: React.FC = () => {
+    const { ref, isVisible } = useScrollAnimation<HTMLElement>();
+
     return (
         <section
+            ref={ref}
             id="projects"
-            className="mb-16 scroll-mt-16 lg:scroll-mt-24"
+            className={`mb-16 scroll-mt-16 lg:scroll-mt-24 transition-all duration-700 ${
+                isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+            }`}
             aria-label="Project"
         >
             <div className="group flex items-center sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -42,3 +50,4 @@ const ProjectSection: React.FC = () => {
 };
 
 export default ProjectSection;
+

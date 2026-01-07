@@ -1,6 +1,8 @@
 "use client";
 import DownloadCVButton from "@/components/cv/download-cv-button";
+import Footer from "@/components/layout/footer";
 import AboutSection from "@/components/sections/about";
+import ContactSection from "@/components/sections/contact";
 import ExperienceSection from "@/components/sections/experience";
 import ProjectsSection from "@/components/sections/project";
 import NavList from "@/components/ui/navlist";
@@ -60,9 +62,9 @@ export default function Home() {
                 <div className="lg:flex lg:justify-between lg:gap-4">
                     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[55%] lg:flex-col lg:justify-between lg:py-10 xl:py-20">
                         <div>
-                            <text className="font-mono text-green">
+                            <span className="font-mono text-green">
                                 Halo, nama saya
-                            </text>
+                            </span>
                             <h1 className="font-title text-3xl font-bold leading-tight text-white sm:text-4xl mt-4">
                                 Akmal Zaidan Hibatullah.
                             </h1>
@@ -132,6 +134,8 @@ export default function Home() {
                         <AboutSection />
                         <ExperienceSection />
                         <ProjectsSection />
+                        <ContactSection />
+                        <Footer />
                     </main>
                 </div>
             </div>

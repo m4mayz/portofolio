@@ -1,5 +1,6 @@
 import HeaderSkeleton from "@/components/layout/header-skeleton";
 import AboutSkeleton from "@/components/sections/about-skeleton";
+import ContactSkeleton from "@/components/sections/contact-skeleton";
 import ExperienceSkeleton from "@/components/sections/experience-skeleton";
 import ProjectSkeleton from "@/components/sections/project-skeleton";
 
@@ -14,9 +15,11 @@ export default function Loading() {
                         <AboutSkeleton />
                         <ExperienceSkeleton />
                         <ProjectSkeleton />
+                        <ContactSkeleton />
                     </main>
                 </div>
             </div>
         </>
     );
 }
+

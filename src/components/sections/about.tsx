@@ -1,13 +1,21 @@
 "use client";
 
 import Skill from "@/components/cards/skill-badge";
+import useScrollAnimation from "@/lib/use-scroll-animation";
 import React from "react";
 
 const AboutSection: React.FC = () => {
+    const { ref, isVisible } = useScrollAnimation<HTMLElement>();
+
     return (
         <section
+            ref={ref}
             id="about"
-            className="mb-16 scroll-mt-16 lg:scroll-mt-24"
+            className={`mb-16 scroll-mt-16 lg:scroll-mt-24 transition-all duration-700 ${
+                isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+            }`}
             aria-label="About Me"
         >
             <div className="group flex items-center sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -18,7 +26,7 @@ const AboutSection: React.FC = () => {
             </div>
             <p className="mt-2 text-[15px] mb-6">
                 Halo! Nama saya Akmal, tapi kebanyakan teman memanggil saya
-                Amayy. Saya suka membuat hal-hal yang “hidup” di perangkat
+                Amayy. Saya suka membuat hal-hal yang "hidup" di perangkat
                 mobile dan web. Ketertarikan saya terhadap dunia IT Development
                 mulai jauh sebelum saya masuk kampus—lebih tepatnya saat SMP,
                 ketika saya iseng mengunduh source code aplikasi Visual Basic 6
@@ -62,3 +70,4 @@ const AboutSection: React.FC = () => {
 };
 
 export default AboutSection;
+
