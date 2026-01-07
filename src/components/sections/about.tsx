@@ -1,11 +1,13 @@
 "use client";
 
 import Skill from "@/components/cards/skill-badge";
+import { useLanguage } from "@/i18n";
 import useScrollAnimation from "@/lib/use-scroll-animation";
 import React from "react";
 
 const AboutSection: React.FC = () => {
     const { ref, isVisible } = useScrollAnimation<HTMLElement>();
+    const { t } = useLanguage();
 
     return (
         <section
@@ -20,33 +22,13 @@ const AboutSection: React.FC = () => {
         >
             <div className="group flex items-center sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
                 <h2 className="font-mono text-sm font-bold text-slate-200 lg:sr-only">
-                    <span className="text-green">01.</span> Tentang Saya
+                    <span className="text-green">01.</span> {t("about.title")}
                 </h2>
                 <span className="ml-4 h-[1.5px] w-25 bg-slate-200"></span>
             </div>
-            <p className="mt-2 text-[15px] mb-6">
-                Halo! Nama saya Akmal, tapi kebanyakan teman memanggil saya
-                Amayy. Saya suka membuat hal-hal yang "hidup" di perangkat
-                mobile dan web. Ketertarikan saya terhadap dunia IT Development
-                mulai jauh sebelum saya masuk kampus—lebih tepatnya saat SMP,
-                ketika saya iseng mengunduh source code aplikasi Visual Basic 6
-                dari internet, memodifikasinya, lalu merasakan kepuasan yang
-                nggak ada obatnya ketika kode itu akhirnya jalan sesuai
-                keinginan. Dari situ, saya tahu: kayaknya dunia IT ini tempat
-                saya banget.
-            </p>
-            <p className="mt-2 text-[15px] mb-6">
-                Saat ini, saya sedang menempuh studi S1 Teknik Informatika dan
-                aktif membangun berbagai project, dari Website sampai Fullstack
-                Mobile App. Sejauh ini saya pernah mengerjakan beberapa website
-                dan aplikasi untuk organisasi kampus, project personal, hingga
-                eksperimen kecil-kecilan yang bantu saya paham lebih jauh
-                tentang software, cloud, dan hal-hal yang berbau SaaS.
-            </p>
-            <p className="mt-2 text-[15px]">
-                Berikut beberapa teknologi yang belakangan ini sering saya
-                gunakan dan eksplor:
-            </p>
+            <p className="mt-2 text-[15px] mb-6">{t("about.paragraph1")}</p>
+            <p className="mt-2 text-[15px] mb-6">{t("about.paragraph2")}</p>
+            <p className="mt-2 text-[15px]">{t("about.techIntro")}</p>
             <div className="mt-4 flex flex-wrap gap-3 lg:gap-4">
                 <Skill icon="devicon:javascript" name="JavaScript" />
                 <Skill icon="material-icon-theme:php" name="PHP" />
@@ -70,4 +52,3 @@ const AboutSection: React.FC = () => {
 };
 
 export default AboutSection;
-

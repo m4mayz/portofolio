@@ -1,13 +1,17 @@
 "use client";
 
 import ProjectCard from "@/components/cards/project-card";
-import data from "@/data/project.json";
+import allData from "@/data/project.json";
+import { useLanguage } from "@/i18n";
 import useScrollAnimation from "@/lib/use-scroll-animation";
 import { Icon } from "@iconify/react";
 import React from "react";
 
 const ProjectSection: React.FC = () => {
     const { ref, isVisible } = useScrollAnimation<HTMLElement>();
+    const { t, language } = useLanguage();
+
+    const data = allData[language as keyof typeof allData];
 
     return (
         <section
@@ -22,7 +26,8 @@ const ProjectSection: React.FC = () => {
         >
             <div className="group flex items-center sticky top-0 z-20 -mx-6 mb-4 w-screen bg-background px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
                 <h2 className="font-mono text-sm font-bold text-slate-200 lg:sr-only">
-                    <span className="text-green">03.</span> Proyek
+                    <span className="text-green">03.</span>{" "}
+                    {t("projects.title")}
                 </h2>
                 <span className="ml-4 h-[1.5px] w-25 bg-slate-200"></span>
             </div>
@@ -39,7 +44,7 @@ const ProjectSection: React.FC = () => {
                 href="/archive"
                 className="group/link inline-flex items-center gap-1 mt-8 text-sm font-mono font-semibold text-white hover:text-green transition-colors duration-300"
             >
-                Lihat Arsip Proyek
+                {t("projects.viewArchive")}
                 <Icon
                     icon="material-symbols:arrow-forward"
                     className="w-4 h-4 text-foreground/60 transition-all duration-300 group-hover/link:text-green group-hover/link:translate-x-2"
@@ -50,4 +55,3 @@ const ProjectSection: React.FC = () => {
 };
 
 export default ProjectSection;
-

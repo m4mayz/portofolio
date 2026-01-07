@@ -1,3 +1,4 @@
+import { LanguageProvider } from "@/i18n";
 import SmoothScroll from "@/lib/smooth-scroll";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
@@ -37,9 +38,11 @@ export default function RootLayout({
             <body
                 className={`${gabarito.variable} ${plusJakartaSans.variable} ${spaceMono.variable} antialiased`}
             >
-                <SmoothScroll />
-                <Analytics />
-                {children}
+                <LanguageProvider>
+                    <SmoothScroll />
+                    <Analytics />
+                    {children}
+                </LanguageProvider>
             </body>
         </html>
     );

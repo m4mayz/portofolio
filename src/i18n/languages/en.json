@@ -1,0 +1,40 @@
+{
+    "greeting": "Hi, my name is",
+    "title": "IT Student — Mobile & Web Developer",
+    "subtitle": "Learning, building, and growing as a developer every day.",
+    "downloadCV": "Download Resume",
+    "nav": {
+        "about": "01. About Me",
+        "experience": "02. Experience",
+        "projects": "03. Projects",
+        "contact": "04. Contact"
+    },
+    "about": {
+        "title": "About Me",
+        "paragraph1": "Hi! My name is Akmal, but most friends call me Amayy. I love creating things that \"live\" on mobile devices and the web. My interest in IT Development started long before I entered college—specifically in middle school, when I randomly downloaded a Visual Basic 6 application source code from the internet, modified it, and felt an unmatched satisfaction when the code finally worked as intended. From that moment, I knew: the IT world is definitely my place.",
+        "paragraph2": "Currently, I'm pursuing a Bachelor's degree in Informatics Engineering and actively building various projects, from Websites to Fullstack Mobile Apps. So far, I've worked on several websites and applications for campus organizations, personal projects, and small experiments that helped me understand more about software, cloud, and anything SaaS-related.",
+        "techIntro": "Here are some technologies I've been using and exploring lately:"
+    },
+    "experience": {
+        "title": "Experience",
+        "viewFullCV": "View Full Resume"
+    },
+    "projects": {
+        "title": "Projects",
+        "viewArchive": "View Project Archive"
+    },
+    "contact": {
+        "title": "Contact",
+        "heading": "Get In Touch",
+        "description": "I'm always open to new opportunities, interesting projects, or just discussing technology. Don't hesitate to reach out!",
+        "sendEmail": "Send Email"
+    },
+    "footer": {
+        "designInspired": "Design inspired by",
+        "builtWith": "Built with"
+    },
+    "cv": {
+        "generating": "Generating...",
+        "downloadError": "Failed to download CV. Please try again."
+    }
+}

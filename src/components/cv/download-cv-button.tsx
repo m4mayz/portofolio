@@ -1,5 +1,6 @@
 "use client";
 
+import { useLanguage } from "@/i18n";
 import { Icon } from "@iconify/react";
 import { pdf } from "@react-pdf/renderer";
 import React, { useState } from "react";
@@ -18,9 +19,12 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
     maxExperiences,
     maxProjects = 3,
     fileName = "CV_Akmal_Zaidan_Hibatullah.pdf",
-    text = "Unduh CV",
+    text,
 }) => {
     const [isGenerating, setIsGenerating] = useState(false);
+    const { t } = useLanguage();
+
+    const buttonText = text || t("downloadCV");
 
     const handleDownload = async () => {
         try {
@@ -46,7 +50,7 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
             URL.revokeObjectURL(url);
         } catch (error) {
             console.error("Error generating PDF:", error);
-            alert("Gagal mengunduh CV. Silakan coba lagi.");
+            alert(t("cv.downloadError"));
         } finally {
             setIsGenerating(false);
         }
@@ -66,12 +70,15 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
                             icon="mdi:loading"
                             className="w-5 h-5 animate-spin"
                         />
-                        <span>Generating...</span>
+                        <span>{t("cv.generating")}</span>
                     </>
                 ) : (
                     <>
-                        <Icon icon="mdi:download" className="w-5 h-5" />
-                        <span>{text}</span>
+                        <Icon
+                            icon="mdi:download"
+                            className="w-5 h-5 transition-transform duration-300 group-hover:scale-110"
+                        />
+                        <span>{buttonText}</span>
                     </>
                 )}
             </span>

@@ -1,6 +1,6 @@
-import experienceData from "@/data/experience.json";
+import experienceDataAll from "@/data/experience.json";
 import personalData from "@/data/personal.json";
-import projectData from "@/data/project.json";
+import projectDataAll from "@/data/project.json";
 import {
     Document,
     Link,
@@ -10,6 +10,10 @@ import {
     View,
 } from "@react-pdf/renderer";
 import React from "react";
+
+// Use Indonesian data for CV (default)
+const experienceData = experienceDataAll.id;
+const projectData = projectDataAll.id;
 
 // Define styles
 const styles = StyleSheet.create({

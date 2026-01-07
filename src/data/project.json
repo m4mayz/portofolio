@@ -1,67 +1,136 @@
-[
-    {
-        "id": 1,
-        "title": "Tema kustom WordPress HMTI 2025",
-        "description": "Tema WordPress custom yang dirancang khusus untuk website organisasi kampus.",
-        "imageUrl": "/project/hmti.png",
-        "projectUrl": "https://hmti.nusaputra.ac.id/",
-        "githubUrl": "https://github.com/m4mayz/HMTI2025",
-        "technologies": [
-            "material-icon-theme:php",
-            "skill-icons:wordpress",
-            "devicon:html5",
-            "devicon:css3",
-            "devicon:tailwindcss",
-            "devicon:javascript"
-        ],
-        "displayedTechnologies": [
-            "PHP",
-            "WordPress",
-            "HTML5",
-            "CSS3",
-            "Tailwind CSS",
-            "JavaScript"
-        ]
-    },
-    {
-        "id": 2,
-        "title": "Presensi-HMTI",
-        "description": "Aplikasi mobile berbasis React Native untuk sistem presensi rapat HMTI (Himpunan Mahasiswa Teknik Informatika) menggunakan teknologi QR Code.",
-        "imageUrl": "/project/presensi.png",
-        "githubUrl": "https://github.com/m4mayz/Presensi-HMTI",
-        "technologies": [
-            "devicon:expo",
-            "devicon:react",
-            "devicon:typescript",
-            "devicon:supabase"
-        ],
-        "displayedTechnologies": [
-            "Expo",
-            "React Native",
-            "TypeScript",
-            "Supabase"
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Portofolio Website",
-        "description": "Personal portfolio website yang menampilkan informasi tentang diri saya, keterampilan, pengalaman, dan proyek yang telah saya kerjakan.",
-        "imageUrl": "/project/portofolio.png",
-        "projectUrl": "https://akmalzaidan.dev/",
-        "githubUrl": "https://github.com/m4mayz/portofolio",
-        "technologies": [
-            "devicon:nextjs",
-            "devicon:react",
-            "devicon:tailwindcss",
-            "devicon:typescript",
-            "skill-icons:vercel-dark"
-        ],
-        "displayedTechnologies": [
-            "Next.js",
-            "React",
-            "Tailwind CSS",
-            "TypeScript",
-            "Vercel"
-        ]
-    }
-]
+{
+    "en": [
+        {
+            "id": 1,
+            "title": "HMTI 2025 Custom WordPress Theme",
+            "description": "A custom WordPress theme designed specifically for the campus organization website.",
+            "imageUrl": "/project/hmti.png",
+            "projectUrl": "https://hmti.nusaputra.ac.id/",
+            "githubUrl": "https://github.com/m4mayz/HMTI2025",
+            "technologies": [
+                "material-icon-theme:php",
+                "skill-icons:wordpress",
+                "devicon:html5",
+                "devicon:css3",
+                "devicon:tailwindcss",
+                "devicon:javascript"
+            ],
+            "displayedTechnologies": [
+                "PHP",
+                "WordPress",
+                "HTML5",
+                "CSS3",
+                "Tailwind CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Presensi-HMTI",
+            "description": "A React Native mobile application for HMTI (Informatics Engineering Student Association) meeting attendance system using QR Code technology.",
+            "imageUrl": "/project/presensi.png",
+            "githubUrl": "https://github.com/m4mayz/Presensi-HMTI",
+            "technologies": [
+                "devicon:expo",
+                "devicon:react",
+                "devicon:typescript",
+                "devicon:supabase"
+            ],
+            "displayedTechnologies": [
+                "Expo",
+                "React Native",
+                "TypeScript",
+                "Supabase"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Portfolio Website",
+            "description": "A personal portfolio website showcasing information about myself, skills, experience, and projects I have worked on.",
+            "imageUrl": "/project/portofolio.png",
+            "projectUrl": "https://akmalzaidan.dev/",
+            "githubUrl": "https://github.com/m4mayz/portofolio",
+            "technologies": [
+                "devicon:nextjs",
+                "devicon:react",
+                "devicon:tailwindcss",
+                "devicon:typescript",
+                "skill-icons:vercel-dark"
+            ],
+            "displayedTechnologies": [
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "TypeScript",
+                "Vercel"
+            ]
+        }
+    ],
+    "id": [
+        {
+            "id": 1,
+            "title": "Tema kustom WordPress HMTI 2025",
+            "description": "Tema WordPress custom yang dirancang khusus untuk website organisasi kampus.",
+            "imageUrl": "/project/hmti.png",
+            "projectUrl": "https://hmti.nusaputra.ac.id/",
+            "githubUrl": "https://github.com/m4mayz/HMTI2025",
+            "technologies": [
+                "material-icon-theme:php",
+                "skill-icons:wordpress",
+                "devicon:html5",
+                "devicon:css3",
+                "devicon:tailwindcss",
+                "devicon:javascript"
+            ],
+            "displayedTechnologies": [
+                "PHP",
+                "WordPress",
+                "HTML5",
+                "CSS3",
+                "Tailwind CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Presensi-HMTI",
+            "description": "Aplikasi mobile berbasis React Native untuk sistem presensi rapat HMTI (Himpunan Mahasiswa Teknik Informatika) menggunakan teknologi QR Code.",
+            "imageUrl": "/project/presensi.png",
+            "githubUrl": "https://github.com/m4mayz/Presensi-HMTI",
+            "technologies": [
+                "devicon:expo",
+                "devicon:react",
+                "devicon:typescript",
+                "devicon:supabase"
+            ],
+            "displayedTechnologies": [
+                "Expo",
+                "React Native",
+                "TypeScript",
+                "Supabase"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Portofolio Website",
+            "description": "Personal portfolio website yang menampilkan informasi tentang diri saya, keterampilan, pengalaman, dan proyek yang telah saya kerjakan.",
+            "imageUrl": "/project/portofolio.png",
+            "projectUrl": "https://akmalzaidan.dev/",
+            "githubUrl": "https://github.com/m4mayz/portofolio",
+            "technologies": [
+                "devicon:nextjs",
+                "devicon:react",
+                "devicon:tailwindcss",
+                "devicon:typescript",
+                "skill-icons:vercel-dark"
+            ],
+            "displayedTechnologies": [
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "TypeScript",
+                "Vercel"
+            ]
+        }
+    ]
+}

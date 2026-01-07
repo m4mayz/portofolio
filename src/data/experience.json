@@ -1,42 +1,86 @@
-[
-    {
-        "title": "KOMINFO",
-        "company": "Himpunan Mahasiswa Teknik Informatika",
-        "period": "Sep 2025 - Sekarang",
-        "description": [
-            "Merancang ulang, melakukan pemeliharaan teknis dan manajemen konten website organisasi.",
-            "Membangun tema WordPress custom untuk menciptakan identitas visual yang modern dan unik bagi organisasi.",
-            "Membangun aplikasi mobile untuk keperluan organisasi."
-        ]
-    },
-    {
-        "title": "Publisher",
-        "company": "Jurnalis Nuansa",
-        "period": "Nov 2024 - Sep 2025",
-        "description": [
-            "Bertanggung jawab atas proses publikasi konten organisasi.",
-            "Mengupload dan mengatur konten di berbagai platform media sosial Jurnalis Nuansa.",
-            "Memelihara dan memperbaiki tampilan website organisasi menggunakan WordPress."
-        ]
-    },
-    {
-        "title": "Tim IT",
-        "company": "MABIM 2025 Nusa Putra University",
-        "period": "Sep 2025",
-        "description": [
-            "Membangun website resmi MABIM 2025 sebagai pusat informasi utama yang memuat jadwal, pengumuman, dan dokumentasi kegiatan.",
-            "Mengelola pembaruan konten dan memastikan website dapat diakses dengan stabil oleh seluruh peserta dan panitia.",
-            "Bertugas sebagai operator live, memastikan kelancaran siaran langsung dan koordinasi teknis selama proses live streaming."
-        ]
-    },
-    {
-        "title": "Penelitian dan Pengembangan",
-        "company": "KKN Desa Cikelat",
-        "period": "Jul 2025",
-        "description": [
-            "Bertugas sebagai pengelola dokumentasi kegiatan KKN, memastikan setiap aktivitas terekam dengan baik dalam bentuk foto maupun video.",
-            "Mengelola konten media sosial KKN, termasuk pembuatan caption, penyusunan feed, serta pengunggahan seluruh dokumentasi kegiatan.",
-            "Membangun website desa sebagai platform informasi resmi."
-        ]
-    }
-]
+{
+    "en": [
+        {
+            "title": "KOMINFO",
+            "company": "Informatics Engineering Student Association",
+            "period": "Sep 2025 - Present",
+            "description": [
+                "Redesigned, performed technical maintenance and content management for the organization's website.",
+                "Built a custom WordPress theme to create a modern and unique visual identity for the organization.",
+                "Developed a mobile application for organizational purposes."
+            ]
+        },
+        {
+            "title": "Publisher",
+            "company": "Jurnalis Nuansa",
+            "period": "Nov 2024 - Sep 2025",
+            "description": [
+                "Responsible for the organization's content publication process.",
+                "Uploaded and managed content across various Jurnalis Nuansa social media platforms.",
+                "Maintained and improved the organization's website appearance using WordPress."
+            ]
+        },
+        {
+            "title": "IT Team",
+            "company": "MABIM 2025 Nusa Putra University",
+            "period": "Sep 2025",
+            "description": [
+                "Built the official MABIM 2025 website as the main information hub containing schedules, announcements, and event documentation.",
+                "Managed content updates and ensured the website was stably accessible to all participants and committee members.",
+                "Served as a live operator, ensuring smooth live broadcasting and technical coordination during the streaming process."
+            ]
+        },
+        {
+            "title": "Research and Development",
+            "company": "KKN Desa Cikelat",
+            "period": "Jul 2025",
+            "description": [
+                "Served as the documentation manager for KKN activities, ensuring every activity was well-recorded in photo and video format.",
+                "Managed KKN social media content, including caption creation, feed arrangement, and uploading all activity documentation.",
+                "Built the village website as an official information platform."
+            ]
+        }
+    ],
+    "id": [
+        {
+            "title": "KOMINFO",
+            "company": "Himpunan Mahasiswa Teknik Informatika",
+            "period": "Sep 2025 - Sekarang",
+            "description": [
+                "Merancang ulang, melakukan pemeliharaan teknis dan manajemen konten website organisasi.",
+                "Membangun tema WordPress custom untuk menciptakan identitas visual yang modern dan unik bagi organisasi.",
+                "Membangun aplikasi mobile untuk keperluan organisasi."
+            ]
+        },
+        {
+            "title": "Publisher",
+            "company": "Jurnalis Nuansa",
+            "period": "Nov 2024 - Sep 2025",
+            "description": [
+                "Bertanggung jawab atas proses publikasi konten organisasi.",
+                "Mengupload dan mengatur konten di berbagai platform media sosial Jurnalis Nuansa.",
+                "Memelihara dan memperbaiki tampilan website organisasi menggunakan WordPress."
+            ]
+        },
+        {
+            "title": "Tim IT",
+            "company": "MABIM 2025 Nusa Putra University",
+            "period": "Sep 2025",
+            "description": [
+                "Membangun website resmi MABIM 2025 sebagai pusat informasi utama yang memuat jadwal, pengumuman, dan dokumentasi kegiatan.",
+                "Mengelola pembaruan konten dan memastikan website dapat diakses dengan stabil oleh seluruh peserta dan panitia.",
+                "Bertugas sebagai operator live, memastikan kelancaran siaran langsung dan koordinasi teknis selama proses live streaming."
+            ]
+        },
+        {
+            "title": "Penelitian dan Pengembangan",
+            "company": "KKN Desa Cikelat",
+            "period": "Jul 2025",
+            "description": [
+                "Bertugas sebagai pengelola dokumentasi kegiatan KKN, memastikan setiap aktivitas terekam dengan baik dalam bentuk foto maupun video.",
+                "Mengelola konten media sosial KKN, termasuk pembuatan caption, penyusunan feed, serta pengunggahan seluruh dokumentasi kegiatan.",
+                "Membangun website desa sebagai platform informasi resmi."
+            ]
+        }
+    ]
+}

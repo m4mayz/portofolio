@@ -5,13 +5,16 @@ import AboutSection from "@/components/sections/about";
 import ContactSection from "@/components/sections/contact";
 import ExperienceSection from "@/components/sections/experience";
 import ProjectsSection from "@/components/sections/project";
+import LanguageSwitcher from "@/components/ui/language-switcher";
 import NavList from "@/components/ui/navlist";
 import Social from "@/components/ui/social";
+import { useLanguage } from "@/i18n";
 import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
     const spotlightRef = useRef<HTMLDivElement>(null);
     const [activeSection, setActiveSection] = useState<string>("");
+    const { t } = useLanguage();
 
     useEffect(() => {
         // Spotlight logic
@@ -62,23 +65,25 @@ export default function Home() {
                 <div className="lg:flex lg:justify-between lg:gap-4">
                     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[55%] lg:flex-col lg:justify-between lg:py-10 xl:py-20">
                         <div>
-                            <span className="font-mono text-green">
-                                Halo, nama saya
-                            </span>
+                            <div className="flex items-center gap-10 mb-4">
+                                <span className="font-mono text-green">
+                                    {t("greeting")}
+                                </span>
+                                <LanguageSwitcher />
+                            </div>
                             <h1 className="font-title text-3xl font-bold leading-tight text-white sm:text-4xl mt-4">
                                 Akmal Zaidan Hibatullah.
                             </h1>
                             <p className="mt-4 max-w-sm text-[15px] mb-6">
                                 <span className="text-white font-semibold">
-                                    Mahasiswa IT — Mobile & Web Developer
+                                    {t("title")}
                                 </span>{" "}
                                 <br />
-                                Belajar, membangun, dan terus berkembang sebagai
-                                developer setiap hari.
+                                {t("subtitle")}
                             </p>
                             <div className="flex-row gap-10 mt-6 flex items-center">
                                 <DownloadCVButton
-                                    text="Unduh CV"
+                                    text={t("downloadCV")}
                                     showProjects={true}
                                     maxProjects={3}
                                 />
@@ -108,22 +113,22 @@ export default function Home() {
                                 <ul className="mt-15 w-max">
                                     <NavList
                                         href="about"
-                                        text="01. Tentang Saya"
+                                        text={t("nav.about")}
                                         active={activeSection === "about"}
                                     />
                                     <NavList
                                         href="experience"
-                                        text="02. Pengalaman"
+                                        text={t("nav.experience")}
                                         active={activeSection === "experience"}
                                     />
                                     <NavList
                                         href="projects"
-                                        text="03. Project"
+                                        text={t("nav.projects")}
                                         active={activeSection === "projects"}
                                     />
                                     <NavList
                                         href="contact"
-                                        text="04. Kontak"
+                                        text={t("nav.contact")}
                                         active={activeSection === "contact"}
                                     />
                                 </ul>
