@@ -1,11 +1,11 @@
 "use client";
-import Button from "@/components/ui/button";
+import DownloadCVButton from "@/components/cv/download-cv-button";
+import AboutSection from "@/components/sections/about";
+import ExperienceSection from "@/components/sections/experience";
+import ProjectsSection from "@/components/sections/project";
 import NavList from "@/components/ui/navlist";
 import Social from "@/components/ui/social";
 import { useEffect, useRef, useState } from "react";
-import AboutSection from "./section/about";
-import ExperienceSection from "./section/experience";
-import ProjectsSection from "./section/project";
 
 export default function Home() {
     const spotlightRef = useRef<HTMLDivElement>(null);
@@ -75,9 +75,10 @@ export default function Home() {
                                 developer setiap hari.
                             </p>
                             <div className="flex-row gap-10 mt-6 flex items-center">
-                                <Button
-                                    text="Unduh CV Saya"
-                                    link="https://example.com"
+                                <DownloadCVButton
+                                    text="Unduh CV"
+                                    showProjects={true}
+                                    maxProjects={3}
                                 />
                                 <div className="flex-row gap-5 flex">
                                     <Social

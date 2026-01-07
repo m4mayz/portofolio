@@ -1,7 +1,8 @@
 "use client";
 
-import ProjectCard from "@/components/ui/projectCard";
+import ProjectCard from "@/components/cards/project-card";
 import data from "@/data/project.json";
+import { Icon } from "@iconify/react";
 import React from "react";
 
 const ProjectSection: React.FC = () => {
@@ -18,10 +19,24 @@ const ProjectSection: React.FC = () => {
                 <span className="ml-4 h-[1.5px] w-25 bg-slate-200"></span>
             </div>
             <div className="flex flex-col gap-4">
-                {data.map((project) => (
-                    <ProjectCard key={project.id} project={project} />
+                {data.map((project, index) => (
+                    <ProjectCard
+                        key={project.id}
+                        project={project}
+                        priority={index === 0}
+                    />
                 ))}
             </div>
+            <a
+                href="/archive"
+                className="group/link inline-flex items-center gap-1 mt-8 text-sm font-mono font-semibold text-white hover:text-green transition-colors duration-300"
+            >
+                Lihat Arsip Proyek
+                <Icon
+                    icon="material-symbols:arrow-forward"
+                    className="w-4 h-4 text-foreground/60 transition-all duration-300 group-hover/link:text-green group-hover/link:translate-x-2"
+                />
+            </a>
         </section>
     );
 };

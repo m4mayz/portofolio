@@ -1,7 +1,8 @@
 "use client";
 
-import ExperienceCard from "@/components/ui/experienceCard";
+import ExperienceCard from "@/components/cards/experience-card";
 import data from "@/data/experience.json";
+import { Icon } from "@iconify/react";
 import React from "react";
 
 const ExperienceSection: React.FC = () => {
@@ -28,6 +29,17 @@ const ExperienceSection: React.FC = () => {
                     />
                 ))}
             </div>
+            <a
+                href="/resume"
+                target="_blank"
+                className="group/link inline-flex items-center gap-1 mt-6 text-sm font-mono font-semibold text-white hover:text-green transition-colors duration-300"
+            >
+                Lihat CV Lengkap
+                <Icon
+                    icon="material-symbols:arrow-outward"
+                    className="w-4 h-4 text-foreground/60 transition-all duration-300 group-hover/link:text-green group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+                />
+            </a>
         </section>
     );
 };

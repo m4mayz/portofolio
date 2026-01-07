@@ -1,4 +1,4 @@
-import SmoothScroll from "@/components/smoothscroll";
+import SmoothScroll from "@/lib/smooth-scroll";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Gabarito, Plus_Jakarta_Sans, Space_Mono } from "next/font/google";

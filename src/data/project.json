@@ -1,65 +1,67 @@
 [
     {
         "id": 1,
-        "title": "Build a Spotify Connected App",
-        "description": "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
-        "imageUrl": "/project/spotify.png",
-        "projectUrl": "https://spotify-connected-app.com",
-        "githubUrl": "https://github.com/username/spotify-app",
+        "title": "Tema kustom WordPress HMTI 2025",
+        "description": "Tema WordPress custom yang dirancang khusus untuk website organisasi kampus.",
+        "imageUrl": "/project/hmti.png",
+        "projectUrl": "https://hmti.nusaputra.ac.id/",
+        "githubUrl": "https://github.com/m4mayz/HMTI2025",
         "technologies": [
-            "devicon:react",
-            "devicon:nodejs",
-            "devicon:express",
-            "logos:spotify-icon"
+            "material-icon-theme:php",
+            "skill-icons:wordpress",
+            "devicon:html5",
+            "devicon:css3",
+            "devicon:tailwindcss",
+            "devicon:javascript"
         ],
-        "displayedTechnologies": ["React", "Node.js", "Express", "Spotify API"],
-        "startDate": "2024-01-01",
-        "endDate": "2024-12-31",
-        "status": "active"
+        "displayedTechnologies": [
+            "PHP",
+            "WordPress",
+            "HTML5",
+            "CSS3",
+            "Tailwind CSS",
+            "JavaScript"
+        ]
     },
     {
         "id": 2,
-        "title": "E-Commerce Platform",
-        "description": "Full-stack e-commerce platform with shopping cart, payment integration, and admin dashboard. Built with modern technologies for optimal performance and user experience.",
-        "imageUrl": "/project/ecommerce.png",
-        "projectUrl": "https://ecommerce-demo.com",
+        "title": "Presensi-HMTI",
+        "description": "Aplikasi mobile berbasis React Native untuk sistem presensi rapat HMTI (Himpunan Mahasiswa Teknik Informatika) menggunakan teknologi QR Code.",
+        "imageUrl": "/project/presensi.png",
+        "githubUrl": "https://github.com/m4mayz/Presensi-HMTI",
         "technologies": [
-            "devicon:nextjs",
+            "devicon:expo",
+            "devicon:react",
             "devicon:typescript",
-            "devicon:tailwindcss",
-            "simple-icons:stripe"
+            "devicon:supabase"
         ],
         "displayedTechnologies": [
-            "Next.js",
+            "Expo",
+            "React Native",
             "TypeScript",
-            "Tailwind CSS",
-            "Stripe"
-        ],
-        "startDate": "2024-03-01",
-        "endDate": "2024-08-31",
-        "status": "completed"
+            "Supabase"
+        ]
     },
     {
         "id": 3,
-        "title": "Mobile Fitness Tracker",
-        "description": "Cross-platform mobile app for tracking workouts, nutrition, and fitness goals. Features include workout plans, progress tracking, and social sharing capabilities.",
-        "imageUrl": "/project/fitness.png",
-        "projectUrl": "https://fitness-tracker.com",
-        "githubUrl": "https://github.com/username/fitness-tracker",
+        "title": "Portofolio Website",
+        "description": "Personal portfolio website yang menampilkan informasi tentang diri saya, keterampilan, pengalaman, dan proyek yang telah saya kerjakan.",
+        "imageUrl": "/project/portofolio.png",
+        "projectUrl": "https://akmalzaidan.dev/",
+        "githubUrl": "https://github.com/m4mayz/portofolio",
         "technologies": [
+            "devicon:nextjs",
             "devicon:react",
-            "devicon:expo",
-            "devicon:firebase",
-            "devicon:typescript"
+            "devicon:tailwindcss",
+            "devicon:typescript",
+            "skill-icons:vercel-dark"
         ],
         "displayedTechnologies": [
-            "React Native",
-            "Expo",
-            "Firebase",
-            "TypeScript"
-        ],
-        "startDate": "2024-02-01",
-        "endDate": "2024-06-30",
-        "status": "active"
+            "Next.js",
+            "React",
+            "Tailwind CSS",
+            "TypeScript",
+            "Vercel"
+        ]
     }
 ]

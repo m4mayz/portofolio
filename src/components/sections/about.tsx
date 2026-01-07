@@ -1,6 +1,6 @@
 "use client";
 
-import Skill from "@/components/ui/skills";
+import Skill from "@/components/cards/skill-badge";
 import React from "react";
 
 const AboutSection: React.FC = () => {

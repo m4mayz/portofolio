@@ -1,0 +1,65 @@
+{
+    "name": "Akmal",
+    "fullName": "Akmal Zaidan Hibatullah",
+    "nickname": "Amayy",
+    "title": "Mobile & Web Developer",
+    "email": "akmalzaidan960@gmail.com",
+    "phone": "+62 821-1185-6806",
+    "location": "Sukabumi, Indonesia",
+    "website": "akmalzaidan.dev",
+    "github": "github.com/m4mayz",
+    "linkedin": "linkedin.com/in/m4mayz",
+    "instagram": "instagram.com/m4mayz",
+    "summary": "Mahasiswa IT — Mobile & Web Developer\nBelajar, membangun, dan terus berkembang sebagai developer setiap hari.",
+    "interests": "Teknologi, Software as a Service, Artificial Intelligence, Pengembangan Web & Mobile; Main Game, Mobile Legends, Resident Evil Series, Musik, Gitar Akustik, Jepang, Anime, Dr. Stone, Attack on Titan, Naruto",
+    "education": [
+        {
+            "institution": "Nusa Putra University",
+            "description": "Mahasiswa Semester 5 Teknik Informatika, konsentrasi pada pengembangan perangkat lunak.",
+            "period": "2023 - Sekarang",
+            "gpa": "3.8 (Semester 5)"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Programming Languages",
+            "items": [
+                "JavaScript",
+                "TypeScript",
+                "PHP",
+                "Python",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
+            "category": "Libraries & Frameworks",
+            "items": [
+                "React",
+                "Next.js",
+                "React Native",
+                "Expo",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "category": "Backend & Database",
+            "items": ["Node.js", "Express", "Supabase", "MySQL"]
+        },
+        {
+            "category": "Tools & Platforms",
+            "items": [
+                "WordPress",
+                "GitHub",
+                "Vercel",
+                "Figma",
+                "Postman",
+                "Firebase"
+            ]
+        },
+        {
+            "category": "AI Tools",
+            "items": ["Google Gemini", "ChatGPT", "GitHub Copilot"]
+        }
+    ]
+}

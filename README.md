@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Akmal Zaidan Hibatullah
+
+Personal portfolio website yang menampilkan informasi tentang diri saya, keterampilan, pengalaman, dan proyek yang telah saya kerjakan.
+
+🔗 **Live Demo**: [akmalzaidan.dev](https://akmalzaidan.dev)
+
+![Portfolio Preview](public/project/portofolio.png)
+
+## Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Framework** | Next.js 16, React 19 |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS v4 |
+| **Fonts** | Gabarito, Plus Jakarta Sans, Space Mono |
+| **Icons** | Iconify |
+| **PDF** | @react-pdf/renderer |
+| **Analytics** | Vercel Analytics |
+| **Scroll** | Lenis |
+
+## Struktur Proyek
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── page.tsx            # Homepage
+│   ├── layout.tsx          # Root layout
+│   ├── loading.tsx         # Loading skeleton
+│   └── resume/             # CV preview page
+│
+├── components/
+│   ├── layout/             # Layout components
+│   ├── sections/           # Section components (about, experience, project)
+│   ├── cards/              # Card components
+│   ├── cv/                 # CV document & download
+│   └── ui/                 # UI primitives
+│
+├── data/                   # JSON data files
+│   ├── personal.json       # Personal info & skills
+│   ├── experience.json     # Work experience
+│   └── project.json        # Projects data
+│
+└── lib/                    # Utilities
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+
+### Installation
 
 ```bash
+# Clone repository
+git clone https://github.com/m4mayz/portofolio.git
+cd portofolio
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000) di browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Production build
+npm run build
 
-## Learn More
+# Start production server
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Personal Data
+Edit file di folder `src/data/`:
+- `personal.json` - Informasi personal, skills, pendidikan
+- `experience.json` - Pengalaman kerja/organisasi
+- `project.json` - Daftar proyek
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Styling
+- `src/app/globals.css` - CSS variables dan global styles
+- Warna tema: `--green: #e384ff` (bisa diubah)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License - silakan gunakan untuk portfolio pribadi Anda!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author
+
+**Akmal Zaidan Hibatullah**
+- GitHub: [@m4mayz](https://github.com/m4mayz)
+- LinkedIn: [m4mayz](https://linkedin.com/in/m4mayz)
+- Instagram: [@m4mayz](https://instagram.com/m4mayz)
