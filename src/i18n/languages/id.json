@@ -35,7 +35,13 @@
     },
     "cv": {
         "generating": "Generating...",
-        "downloadError": "Gagal mengunduh CV. Silakan coba lagi."
+        "downloadError": "Gagal mengunduh CV. Silakan coba lagi.",
+        "relevantExperience": "Pengalaman Relevan",
+        "skills": "Keahlian",
+        "selectedProjects": "Proyek Pilihan",
+        "education": "Pendidikan",
+        "interests": "Minat",
+        "gpa": "IPK"
     },
     "backToTop": "Kembali ke atas"
 }

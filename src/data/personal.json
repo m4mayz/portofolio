@@ -10,56 +10,112 @@
     "github": "github.com/m4mayz",
     "linkedin": "linkedin.com/in/m4mayz",
     "instagram": "instagram.com/m4mayz",
-    "summary": "Mahasiswa IT — Mobile & Web Developer\nBelajar, membangun, dan terus berkembang sebagai developer setiap hari.",
-    "interests": "Teknologi, Software as a Service, Artificial Intelligence, Pengembangan Web & Mobile; Main Game, Mobile Legends, Resident Evil Series, Musik, Gitar Akustik, Jepang, Anime, Dr. Stone, Attack on Titan, Naruto",
-    "education": [
-        {
-            "institution": "Nusa Putra University",
-            "description": "Mahasiswa Semester 5 Teknik Informatika, konsentrasi pada pengembangan perangkat lunak.",
-            "period": "2023 - Sekarang",
-            "gpa": "3.8 (Semester 5)"
-        }
-    ],
-    "skills": [
-        {
-            "category": "Programming Languages",
-            "items": [
-                "JavaScript",
-                "TypeScript",
-                "PHP",
-                "Python",
-                "HTML",
-                "CSS"
-            ]
-        },
-        {
-            "category": "Libraries & Frameworks",
-            "items": [
-                "React",
-                "Next.js",
-                "React Native",
-                "Expo",
-                "Tailwind CSS"
-            ]
-        },
-        {
-            "category": "Backend & Database",
-            "items": ["Node.js", "Express", "Supabase", "MySQL"]
-        },
-        {
-            "category": "Tools & Platforms",
-            "items": [
-                "WordPress",
-                "GitHub",
-                "Vercel",
-                "Figma",
-                "Postman",
-                "Firebase"
-            ]
-        },
-        {
-            "category": "AI Tools",
-            "items": ["Google Gemini", "ChatGPT", "GitHub Copilot"]
-        }
-    ]
+    "en": {
+        "summary": "IT Student — Mobile & Web Developer\nLearning, building, and growing as a developer every day.",
+        "interests": "Technology, Software as a Service, Artificial Intelligence, Web & Mobile Development; Gaming, Mobile Legends, Resident Evil Series, Music, Acoustic Guitar, Japan, Anime, Dr. Stone, Attack on Titan, Naruto",
+        "education": [
+            {
+                "institution": "Nusa Putra University",
+                "description": "5th Semester Informatics Engineering student, concentrating on software development.",
+                "period": "2023 - Present",
+                "gpa": "3.8 (5th Semester)"
+            }
+        ],
+        "skills": [
+            {
+                "category": "Programming Languages",
+                "items": [
+                    "JavaScript",
+                    "TypeScript",
+                    "PHP",
+                    "Python",
+                    "HTML",
+                    "CSS"
+                ]
+            },
+            {
+                "category": "Libraries & Frameworks",
+                "items": [
+                    "React",
+                    "Next.js",
+                    "React Native",
+                    "Expo",
+                    "Tailwind CSS"
+                ]
+            },
+            {
+                "category": "Backend & Database",
+                "items": ["Node.js", "Express", "Supabase", "MySQL"]
+            },
+            {
+                "category": "Tools & Platforms",
+                "items": [
+                    "WordPress",
+                    "GitHub",
+                    "Vercel",
+                    "Figma",
+                    "Postman",
+                    "Firebase"
+                ]
+            },
+            {
+                "category": "AI Tools",
+                "items": ["Google Gemini", "ChatGPT", "GitHub Copilot"]
+            }
+        ]
+    },
+    "id": {
+        "summary": "Mahasiswa IT — Mobile & Web Developer\nBelajar, membangun, dan terus berkembang sebagai developer setiap hari.",
+        "interests": "Teknologi, Software as a Service, Artificial Intelligence, Pengembangan Web & Mobile; Main Game, Mobile Legends, Resident Evil Series, Musik, Gitar Akustik, Jepang, Anime, Dr. Stone, Attack on Titan, Naruto",
+        "education": [
+            {
+                "institution": "Nusa Putra University",
+                "description": "Mahasiswa Semester 5 Teknik Informatika, konsentrasi pada pengembangan perangkat lunak.",
+                "period": "2023 - Sekarang",
+                "gpa": "3.8 (Semester 5)"
+            }
+        ],
+        "skills": [
+            {
+                "category": "Bahasa Pemrograman",
+                "items": [
+                    "JavaScript",
+                    "TypeScript",
+                    "PHP",
+                    "Python",
+                    "HTML",
+                    "CSS"
+                ]
+            },
+            {
+                "category": "Library & Framework",
+                "items": [
+                    "React",
+                    "Next.js",
+                    "React Native",
+                    "Expo",
+                    "Tailwind CSS"
+                ]
+            },
+            {
+                "category": "Backend & Database",
+                "items": ["Node.js", "Express", "Supabase", "MySQL"]
+            },
+            {
+                "category": "Tools & Platform",
+                "items": [
+                    "WordPress",
+                    "GitHub",
+                    "Vercel",
+                    "Figma",
+                    "Postman",
+                    "Firebase"
+                ]
+            },
+            {
+                "category": "AI Tools",
+                "items": ["Google Gemini", "ChatGPT", "GitHub Copilot"]
+            }
+        ]
+    }
 }

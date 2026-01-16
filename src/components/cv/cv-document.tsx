@@ -11,10 +11,6 @@ import {
 } from "@react-pdf/renderer";
 import React from "react";
 
-// Use Indonesian data for CV (default)
-const experienceData = experienceDataAll.id;
-const projectData = projectDataAll.id;
-
 // Define styles
 const styles = StyleSheet.create({
     page: {
@@ -202,13 +198,39 @@ interface CVDocumentProps {
     showProjects?: boolean;
     maxExperiences?: number;
     maxProjects?: number;
+    language?: "en" | "id";
+    translations?: {
+        relevantExperience: string;
+        skills: string;
+        selectedProjects: string;
+        education: string;
+        interests: string;
+        gpa: string;
+    };
 }
 
 const CVDocument: React.FC<CVDocumentProps> = ({
     showProjects = true,
     maxExperiences,
     maxProjects = 3,
+    language = "id",
+    translations = {
+        relevantExperience: "Pengalaman Relevan",
+        skills: "Keahlian",
+        selectedProjects: "Proyek Pilihan",
+        education: "Pendidikan",
+        interests: "Minat",
+        gpa: "IPK",
+    },
 }) => {
+    // Select data based on language
+    const experienceData =
+        language === "en" ? experienceDataAll.en : experienceDataAll.id;
+    const projectData =
+        language === "en" ? projectDataAll.en : projectDataAll.id;
+    const personalDataLang =
+        language === "en" ? personalData.en : personalData.id;
+
     const experiences = maxExperiences
         ? experienceData.slice(0, maxExperiences)
         : experienceData;
@@ -223,14 +245,14 @@ const CVDocument: React.FC<CVDocumentProps> = ({
                     <View>
                         <Text style={styles.name}>{personalData.fullName}</Text>
                         <Text style={styles.subtitle}>
-                            {personalData.summary}
+                            {personalDataLang.summary}
                         </Text>
                     </View>
 
                     {/* Experience */}
                     <View>
                         <Text style={styles.sectionTitle}>
-                            Relevant Experience
+                            {translations.relevantExperience}
                         </Text>
                         {experiences.map((exp, index) => (
                             <View key={index} style={styles.itemContainer}>
@@ -306,9 +328,9 @@ const CVDocument: React.FC<CVDocumentProps> = ({
                     {/* Skills */}
                     <View>
                         <Text style={styles.firstRightSectionTitle}>
-                            Skills
+                            {translations.skills}
                         </Text>
-                        {personalData.skills.map((skillGroup, index) => (
+                        {personalDataLang.skills.map((skillGroup, index) => (
                             <View key={index} style={styles.skillCategory}>
                                 <Text style={styles.skillCategoryTitle}>
                                     {skillGroup.category}
@@ -324,7 +346,7 @@ const CVDocument: React.FC<CVDocumentProps> = ({
                     {showProjects && projects.length > 0 && (
                         <View>
                             <Text style={styles.sectionTitle}>
-                                Selected Projects
+                                {translations.selectedProjects}
                             </Text>
                             {projects.map((project, index) => (
                                 <View key={index} style={styles.projectItem}>
@@ -354,15 +376,17 @@ const CVDocument: React.FC<CVDocumentProps> = ({
 
                     {/* Education */}
                     <View>
-                        <Text style={styles.sectionTitle}>Education</Text>
-                        {personalData.education.map((edu, index) => (
+                        <Text style={styles.sectionTitle}>
+                            {translations.education}
+                        </Text>
+                        {personalDataLang.education.map((edu, index) => (
                             <View key={index} style={styles.educationItem}>
                                 <Text style={styles.degree}>
                                     {edu.institution}
                                 </Text>
                                 {edu.gpa && (
                                     <Text style={styles.educationDetails}>
-                                        IPK: {edu.gpa}
+                                        {translations.gpa}: {edu.gpa}
                                     </Text>
                                 )}
                                 <Text style={styles.projectDescription}>
@@ -374,9 +398,11 @@ const CVDocument: React.FC<CVDocumentProps> = ({
 
                     {/* Interests */}
                     <View>
-                        <Text style={styles.sectionTitle}>Interests</Text>
+                        <Text style={styles.sectionTitle}>
+                            {translations.interests}
+                        </Text>
                         <Text style={styles.interestsText}>
-                            {personalData.interests}
+                            {personalDataLang.interests}
                         </Text>
                     </View>
                 </View>

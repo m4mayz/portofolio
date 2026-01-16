@@ -22,7 +22,7 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
     text,
 }) => {
     const [isGenerating, setIsGenerating] = useState(false);
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     const buttonText = text || t("downloadCV");
 
@@ -30,12 +30,24 @@ const DownloadCVButton: React.FC<DownloadCVButtonProps> = ({
         try {
             setIsGenerating(true);
 
+            // Get translations for CV
+            const cvTranslations = {
+                relevantExperience: t("cv.relevantExperience"),
+                skills: t("cv.skills"),
+                selectedProjects: t("cv.selectedProjects"),
+                education: t("cv.education"),
+                interests: t("cv.interests"),
+                gpa: t("cv.gpa"),
+            };
+
             // Generate PDF
             const blob = await pdf(
                 <CVDocument
                     showProjects={showProjects}
                     maxExperiences={maxExperiences}
                     maxProjects={maxProjects}
+                    language={language}
+                    translations={cvTranslations}
                 />
             ).toBlob();
 

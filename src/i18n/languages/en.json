@@ -34,7 +34,14 @@
         "builtWith": "Built with"
     },
     "cv": {
-        "generating": "Generating..."
+        "generating": "Generating...",
+        "downloadError": "Failed to download CV. Please try again.",
+        "relevantExperience": "Relevant Experience",
+        "skills": "Skills",
+        "selectedProjects": "Selected Projects",
+        "education": "Education",
+        "interests": "Interests",
+        "gpa": "GPA"
     },
     "backToTop": "Back to top"
 }
